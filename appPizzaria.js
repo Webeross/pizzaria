@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function montarPizza() {
 
+        let custo_extra = 0;
         let custo = 0;
         let extra = "";
         let opcionais = "";
@@ -23,17 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
         // Ingredientes Extras
         let queijoExtraCheckbox = document.querySelector('input[name="extra-queijo"]:checked');
         if (queijoExtraCheckbox) {
-            custo += 2.00;
+            custo_extra += 2.00;
             extra += "<br>   - Queijo";
         }
         let baconExtraCheckbox = document.querySelector('input[name="extra-bacon"]:checked');
         if (baconExtraCheckbox) {
-            custo += 3.00;
+            custo_extra += 3.00;
             extra += "<br>   - Bacon";
         }
         let pepperoniExtraCheckbox = document.querySelector('input[name="extra-pepperoni"]:checked');
         if (pepperoniExtraCheckbox) {
-            custo += 4.00;
+            custo_extra += 4.00;
             extra += "<br>   - Pepperoni";
         }
         descricao += extra;
@@ -82,10 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
             custo = 43.75;
         }
 
-
+        custo_total = custo_extra + custo
         // Atualizando o custo total
         let totalPedidoElement = document.getElementById("total-pedido");
-        totalPedidoElement.textContent = "Total do Pedido: R$ " + custo.toFixed(2);
+        totalPedidoElement.textContent = "Total do Pedido: R$ " + custo_total.toFixed(2);
 
         // Atualizando a descrição do pedido
         let descricaoPedidoElement = document.getElementById("descricao-pedido");
