@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
         // Sabor selecionado
         let saborSelecionado = document.querySelector('input[name="sabor"]:checked');
-        let sabor = saborSelecionado ? saborSelecionado.dataset.sabor : 'Sabor não selecionado';
+        let sabor = saborSelecionado ? saborSelecionado.value : 'Sabor não selecionado';
+        console.log(sabor)
         
         // Obtendo tamanho selecionado 
         let tamanhoSelecionado = document.querySelector('input[name="tamanho"]:checked');
@@ -61,17 +62,17 @@ document.addEventListener("DOMContentLoaded", function(){
         // Montando a descrição completa
         descricao = "<br>    - " + sabor + "<br>    - " + tamanho + "<br>    - " + borda + extra + opcionais;
 
-        if ((sabor === 'Margherita' || sabor === 'Calabresa' || sabor === 'Frango c/ Catupiry') && tamanho === 'brotinho') {
+        if ((sabor === 'margherita' || sabor === 'calabresa' || sabor === 'Frango c/ Catupiry') && tamanho === 'brotinho') {
             custo = 18.00;
-        } else if ((sabor === 'Margherita' || sabor === 'Calabresa' || sabor === 'Frango c/ Catupiry') && tamanho === 'padrao') {
+        } else if ((sabor === 'margherita' || sabor === 'calabresa' || sabor === 'Frango c/ Catupiry') && tamanho === 'padrao') {
             custo = 25.00;
-        } else if ((sabor === 'Margherita' || sabor === 'Calabresa' || sabor === 'Frango c/ Catupiry') && tamanho === 'grande') {
+        } else if ((sabor === 'margherita' || sabor === 'calabresa' || sabor === 'Frango c/ Catupiry') && tamanho === 'grande') {
             custo = 31.00;
-        } else if (sabor === 'Portuguesa' && tamanho === 'brotinho') {
+        } else if (sabor === 'portuguesa' && tamanho === 'brotinho') {
             custo = 24.00;
-        } else if (sabor === 'Portuguesa' && tamanho === 'padrao') {
+        } else if (sabor === 'portuguesa' && tamanho === 'padrao') {
             custo = 32.00;
-        } else if (sabor === 'Portuguesa' && tamanho === 'grande') {
+        } else if (sabor === 'portuguesa' && tamanho === 'grande') {
             custo = 40.00;
         } else if (sabor === '4 Queijos' && tamanho === 'brotinho') {
             custo = 26.00;
