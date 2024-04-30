@@ -6,7 +6,7 @@ Antes de começar, certifique-se de ter instalado o Node.js em sua máquina. Voc
 
 Instalação
 Clone este repositório em seu ambiente de desenvolvimento:
-git clone https://github.com/seu-usuario/pizzaria-delicia.git
+git clone https://github.com/Webeross/pizzaria.git
 Navegue até o diretório do projeto:
 cd pizzaria
 Instale as dependências do projeto:
