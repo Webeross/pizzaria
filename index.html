@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria..</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Pizzaria..</h1>
+
+        <h2 class="pedido-title"> Monte seu pedido</h2>
+        <hr>
+        <div class="pedido-title">
+            <input type="radio" name="sabor" value="margherits" data-sabor="margherits"> Margherita (R$ 18.00 / R$ 25.00 / R$ 31.00)
+        </div>
+        <div class="pedido-title">
+            <input type="radio" name="sabor" value="calabresa" data-sabor="calabresa"> Calabresa (R$ 18.00 / R$ 25.00 / R$ 31.00)
+        </div>
+        <div class="pedido-title">
+            <input type="radio" name="sabor" value="frango" data-sabor="frango"> Frango c/ Catupiry (R$ 18.00 / R$ 25.00 / R$ 31.00)
+        </div>
+        <div class="pedido-title">
+            <input type="radio" name="sabor" value="portuguesa" data-sabor="portuguesa"> Portuguesa (R$ 24.00 / R$ 32.00 / R$ 40.00)
+        </div>
+        <div class="pedido-title">
+            <input type="radio" name="sabor" value="queijos" data-sabor="queijos"> 4 Queijos (R$ 26.00 / R$ 35.00 / R$ 43.75)
+        </div>
+        <br><br>
+        <hr>
+
+        <h2>Selecione o tamanho da pizza</h2>
+
+        <label>
+            <input type="radio" name="tamanho" value="brotinho" data-tamanho="brotinho"> Broto - 20cm / 4 pedaços 
+        </label>
+        <label>
+            <input type="radio" name="tamanho" value="padrao" data-tamanho="padrao"> Padrão - 26cm / 8 pedaços 
+        </label>
+        <label>
+            <input type="radio" name="tamanho" value="grande" data-tamanho="grande"> Grande - 35cm / 12 pedaços 
+        </label>
+        <br><br>
+        <hr>
+        <h2> Selecione a borda da Pizza </h2>
+        <label><input type="radio" name="borda" value="Sem borda" data-borda="Sem borda"> Sem borda
+        </label>
+        <label>
+            <input type="radio" name="borda" value="Tradicional" data-borda="Tradicional"> Tradicional
+        </label>
+        <label>
+            <input type="radio" name="borda" value="Recheada catupiry" data-borda="Recheada catupiry"> Recheada catupiry
+        </label>
+        <label>
+            <input type="radio" name="borda" value="Recheada cheddar" data-borda="Recheada cheddar"> Recheada cheddar
+        </label>
+        <br><br>
+        <hr>
+        <h2> Ingredientes Extras</h2>
+        <label>
+            <input type="checkbox" name="extra-queijo" data-extra="extra-queijo"> Queijo Extra +R$ 2.00
+        </label>
+        <label>
+            <input type="checkbox" name="extra-bacon" data-extra="extra-bacon"> Bacon Extra +R$ 3.00
+        </label>
+        <label>
+            <input type="checkbox" name="extra-pepperoni" data-extra="extra-pepperoni"> Pepperoni Extra +R$ 4.00
+        </label>
+        <br><br>
+        <hr>
+        <h2> Opcionais - Preparação:</h2>
+        <label>
+            <input type="checkbox" name="opcionais-oregano" data-opcionais="opcionais-oregano"> Oregano
+        </label>
+        <label>
+            <input type="checkbox" name="opcionais-azeitona" data-opcionais="opcionais-azeitona"> Azeitona
+        </label>
+        <label>
+            <input type="checkbox" name="opcionais-azeite" data-opcionais="opcionais-azeite"> Azeite
+        </label>
+        <label>
+            <input type="checkbox" name="opcionais-pimenta" data-opcionais="opcionais-pimenta"> Pimenta
+        </label>
+        <br><br>
+        <hr>
+        <button>Montar Pizza</button>
+        <h2>Total do pedido:</h2>
+        <p id="total-pedido">Total do Pedido: R$ 0.00</p>
+        <br>
+        <h2>Descrição do pedido...</h2>
+        <p id="descricao-pedido">...............</p>
+        
+        <script src="./appPizzaria.js"></script>
+
+    </div>
+</body>
+</html>
